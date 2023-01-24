@@ -1,0 +1,86 @@
+Formulários
+
+vamos tratar campo campo do formulário de forma "isolada", COMO? colocando uma <div> para envelopar 
+cada campo, esse será a nossa estrutura do HTML, E dentro da da tag <div> vamos colocar a 
+class="form-group" a na tag <input> será adiocinado a class="form-control". 
+Dentro da tag <input> é possível utilizar a class="form-control-sm" (ou lg), para definir tamanho do
+texto, para combinar com a classes já aplicada dentro do input  
+
+
+Para tag de seleção
+A sintaxe é a mesma, para a <div class="form-group"> e para tag de seleção <select class="form-control"> 
+
+Para o text area:
+Mesma sintaxe
+
+
+Aonde muda, somente para o input do tipo file:
+A div fica mesma coisa <div class="form-group"> e na tag <input class="form-control-file">
+
+
+Uma formatação para arquivo personalizada:
+<div class="custom-file"> e vamos pela primeira vez utilizar class para a tag <label class="custom-file-input"> a tag <label class="custom-file-label">  
+
+
+Formatação para o Range:
+<div class="form-group"> e para o a tag <input class="custom-range">
+
+Formatação para botões😅️ (já vimos isso antes):
+<input class="btn btn-primary">
+
+
+Para forulários inline:
+<form class="form-inline"> e para as tags inputs <input class="form-control mr2"> 
+
+
+E para validar formulario:
+Como a estrutura esta dividas por divs vamos começar a adicionando <div class="form-group">  e para os 
+inputs <input class="form-control>  e para a div que contém senha invalida vamos adicionar 
+<div class="invalid-feedback">
+
+Aula 120 - Input
+
+
+Primeiro a div pai, logos após a div secundaria, depois a tag span e por ultimo a tag input
+<div>   => class="input-group"
+<div>   => class="input-group-prepend"
+<span>  => class="input-group-text" 
+<input> => class="form-control" 
+
+Para junção depois Append
+<div>   => class="input-group"
+<input> => class="form-control"
+<div>   => class="input-group-append"
+<span>  => class="input-group-text"
+
+URl customizada
+<div>  => class="input-group"
+<div>  => class="input-group-prepend"
+<span> => class="input-text" 
+
+Para Moeda
+Vamos combinar o append e o prepend
+<div>  => class="input-group"
+<div>  => class="input-group-prepend"
+<span> => class="input-text" 
+<input> => class="form-control"
+
+<div>   => class="input-group-append"
+<span>  => class="input-group-text" 
+
+Para checkbox
+Dessa vez vamos realizar uma alteração, colocar a class="input-group-text" (que iria na tag <span>) 
+dentro de uma div tercearia
+<div>  => class="input-group"
+<div>  => class="input-group-prepend"
+<div>  => class="input-group-text" 
+
+
+Para Múltiplos inputs
+<div>  => class="input-group"
+<div>  => class="input-group-prepend"
+<span> => class="input-group-text" 
+
+Pesquisas
+<div>  => class="input-group"
+<div> => class="input-group-append"~]]                        .
