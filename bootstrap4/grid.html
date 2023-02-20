@@ -10,27 +10,92 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    
+
     <style>
 
-        .container {
-          background-color: coral;
+        .marcador {
+          background-color: #fe9d9d;
+          border: 1px solid #f94646;
+          color:darkblue;
         }
-        .marcador{
-          background-color: aquamarine;
+        .marcador-container{
+          background-color: #5bf946;
+          border: 1px solid #36ae26;
+          color: darkcyan;
         }
     </style>
 
   </head>
-    <div class=" container marcador">
-      <div class="row">
-        <div class="col-6 col-sm-2 col-md-10 col-lg">Area 1</div>
-        <div class="col-6 col-sm-10 col-md-2 ">Area 2</div>
+    <div class=" container-fluid marcador-container">
+      <!-- col-(quantidade de grids), col-sm-(quantidade grids),
+        col-md-(quantidade grids), col-lg-(quantidade grids), col-xl-(quantidade grids) -->
+       <h2>Lagura Fixa</h2> 
+       <div class="row">  <!-- È dentro da row que ficara o grid com 12 colunas -->
+        <div class="marcador col">Area 1</div>
+        <div class="marcador col ">Area 2</div>
+        <div class="marcador col">Area 3</div>
+        <div class="marcador col ">Area 4</div>
+        <!-- Com esse layout sempre teremos colunas fixa, independente do dispositivo!  -->
       </div>
-    </div>  
+      
+      <h2>Lagura automatica (auto-layout)</h2> 
+       <div class="row">  
+        <div class="marcador col">Area 1</div>
+        <div class="marcador col-6 ">Area 2</div>
+        <div class="marcador col">Area 3</div>
+        <!-- O layout ganha uma forma um pouco mais interessante, mais, fica igual para todos os dispositivos-->
+      </div>
+
+      <h2>Largura igual empilhada</h2> 
+       <div class="row">  
+        <div class="marcador col-sm">Area 1</div>
+        <div class="marcador col-sm ">Area 2</div>
+        <div class="marcador col-sm">Area 3</div>
+        <div class="marcador col-sm ">Area 4</div>
+        <!-- A propriendade SM alcança os dispositivos celulares, a responsividade começa aser alcançada -->
+      </div>
+
+      <h2>Ordenado</h2> 
+       <div class="row">  
+        <div class="marcador col-md-3 order-4">Area 1</div>
+        <div class="marcador col-md-3 order-3 ">Area 2</div>
+        <div class="marcador col-md-3 order-2">Area 3</div>
+        <div class="marcador col-md-3 order-2 ">Area 4</div>
+      </div>
+
+      <h2>Offset</h2> 
+       <div class="row">  
+        <div class="marcador col-md-6 offset-md-3">Login...</div>
+        <!-- Essa propriedade é para espaçamento, típico para logins e formulários         -->
+      </div>
+
+      <h2>Offset mútiplos alonhinhamentos</h2> 
+       <div class="row">  
+        <div class="marcador col-md-3  offset-md-4">Item 1</div>
+        <div class="marcador col-md-3  offset-md-4 ">Item 2</div>
+
+        <!-- Essa classe lembra muito o space-bettuwn do flex box, muito bom para espaçamento de itens -->       
+      </div>
+
+      <h2>Ordenado</h2> 
+      <div class="row">  
+         <div class="col-md-6 " style="border: 1px solid burlywood">
+               Area 1               
+          <div class="row">
+            <div class="marcador col-md-6">
+              conteúdo da Área1
+            </div>
+            <div class="marcador col-md-6">
+              conteúdo da Área1
+            </div>
+          </div>
+        </div>        
+      </div>
+      
+    </div>
   <body>
 
-    
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
